@@ -1,19 +1,18 @@
 #include "holberton.h"
-
 /**
- * main - putchar function to print a statement
+ * main - print Holberton
+ * holberton[]: array of char that contain holberton
  *
- * Return: Always 0 (Success)
+ * Return: 0 at the end of the program
  */
 int main(void)
 {
-	char word[10] = "Holberton";
-	int i = 0;
+	char holberton[9] = "Holberton";
+	unsigned long int i;
 
-	while (i < 9)
+	for (i = 0; i < 9; i++)
 	{
-		_putchar(word[i]);
-		i++;
+		_putchar(holberton[i]);
 	}
 	_putchar('\n');
 	return (0);
