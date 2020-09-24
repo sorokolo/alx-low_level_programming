@@ -1,41 +1,36 @@
-#include "holberton.h"
 #include <stdio.h>
-
 /**
- * main - main 
+ * main - prints nultplies of 3 or 5
  *
- *
- * Return: Always 0
+ * Description:
+ * Return: Always returns 0
  */
 int main(void)
 {
-	int count = 1;
+	int start, end;
 
-	while (count < 101)
+	end = 99;
+
+	for (start = 1; start <= end; start++)
 	{
-		if (count % 3 == 0 && count % 5 == 0)
+		if (start % 15 == 0)
 		{
-			printf("%s", "FizzBuzz");
+			printf("FizzBuzz ");
 		}
-		else if (count % 3 == 0)
+		else if (start % 3 == 0)
 		{
-			printf("%s", "Fizz");
+			printf("Fizz ");
 		}
-		else if (count % 5 == 0)
+		else if (start % 5 == 0)
 		{
-			printf("%s", "Buzz");
-		}
-		else
+			printf("Buzz ");
+		} else
 		{
-			printf("%d", count);
+			printf("%d ", start);
 		}
-
-		if (count != 100)
-		{
-		printf(" ");
-		}
-		count++;
 	}
-	printf("\n");
+
+	printf("Buzz\n");
+
 	return (0);
 }
