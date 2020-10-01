@@ -4,7 +4,6 @@
  * @dest: Fisrt string
  * @src: second string
  *
- * Description:
  * Return: Always returns 0 on success
  */
 char *_strcat(char *dest, char *src)
